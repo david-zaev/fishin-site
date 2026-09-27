@@ -1,0 +1,23 @@
+:root { --bg: #f4f4f2; --surface: #ffffff; --text: #111112; --muted: #5a5a5f; --line: #e2e2e0; --accent: #111112; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0a0a0b; --surface: #151516; --text: #f2f2f2; --muted: #a1a1a6; --line: #2a2a2c; --accent: #f2f2f2; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 48px 20px 80px; }
+header { display: flex; align-items: center; gap: 12px; margin-bottom: 32px; }
+header a { color: var(--text); text-decoration: none; font-weight: 700; font-size: 20px; letter-spacing: -0.01em; }
+.mark { width: 36px; height: 36px; border-radius: 50%; background: var(--accent); display: grid; place-items: center; }
+.mark svg { width: 20px; height: 20px; fill: var(--bg); }
+h1 { font-size: 32px; line-height: 1.2; letter-spacing: -0.02em; margin: 0 0 8px; }
+h2 { font-size: 19px; margin: 32px 0 8px; }
+p, li { color: var(--text); }
+.muted { color: var(--muted); }
+ul { padding-left: 20px; }
+li { margin: 6px 0; }
+a { color: var(--text); }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 20px 22px; margin: 16px 0; }
+.links { display: grid; gap: 12px; margin-top: 24px; }
+.links a { display: block; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 16px 18px; text-decoration: none; font-weight: 600; }
+.links a span { display: block; font-weight: 400; color: var(--muted); font-size: 14px; }
+footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
